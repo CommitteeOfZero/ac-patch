@@ -1,4 +1,4 @@
-# chn-patch
-Issue tracker and downloads for our CHAOS;HEAD NOAH Steam & GOG patch
+# ac-patch
+Issue tracker and downloads for our ANONYMOUS;CODE patch
 
-See http://sonome.dareno.me/projects/chn-patch.html for details, contact information and instructions.
+See http://sonome.dareno.me/projects/ac-patch.html for details, contact information and instructions.
