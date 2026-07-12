@@ -1,0 +1,25 @@
+config.ps1
+temp/
+DIST/
+symbols/
+**/windata/*
+!**/windata/.gitkeep
+ac-edited-images/*
+!ac-edited-images/.gitkeep
+script_archive_steam/*
+!script_archive_steam/.gitkeep
+/*.zip
+/*.rar
+
+# noidget
+installer/build/*
+!installer/build/.gitkeep
+installer/deploy/
+installer/deployUninstaller/
+installer/userdata/enscriptToc.json
+installer/userdata/enscriptTocC.json
+
+# realboot
+launcher/build/*
+!launcher/build/.gitkeep
+launcher/deploy/

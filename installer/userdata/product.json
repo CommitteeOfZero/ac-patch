@@ -1,0 +1,49 @@
+{
+    "windowTitle": "ANONYMOUS;CODE Improvement Patch (Steam) Installer",
+    "uninstallerWindowTitle": "ANONYMOUS;CODE Improvement Patch (Steam) Uninstaller",
+    "gameTitle": "ANONYMOUS;CODE",
+    "inputScriptVersionTitle": "Steam",
+    "paths": {
+        "GAME_STEAM_NAME": "AC",
+        "PATCH_CONTENT_COMMON": "DIST/DIST_COMMON",
+        "PATCH_CONTENT_FULL": "DIST/DIST_FULL",
+        "PATCH_CONTENT_PARTIAL": "DIST/DIST_PARTIAL",
+        "LAUNCHERENG_PATH": "%GAME_PATH%/MAGESgamelauncher.exe",
+        "LAUNCHER_EXE": "MAGESgamelauncher.exe"
+    },
+    "platforms": {
+        "windows": {
+            "conflictingProcesses": [
+                "game.exe",
+                "noidget.exe",
+                "MAGESgamelauncher_original.exe",
+                "MAGESgamelauncher.exe",
+                "ACSteamPatch-Installer.exe"
+            ],
+            "uninstallProductKey": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\AnonymousCodeSteamPatch",
+            "uninstallProductDisplayName": "ANONYMOUS;CODE Improvement Patch (Steam)",
+            "uninstallProductDisplayVersion": "1.0.1",
+            "uninstallProductVersionMajor": 1,
+            "uninstallProductVersionMinor": 0,
+            "uninstallProductUninstallString": "\"%GAME_PATH%/nguninstall.exe\"",
+            "paths": {
+                "COZ_CONFIG_LOCATION": "%LOCALAPPDATA%/Committee of Zero",
+                "CONFIG_LOCATION": "%COZ_CONFIG_LOCATION%/ACSteam",
+                "MAGES_CONFIG_LOCATION": "%MYDOCUMENTS%/My Games/mages_steam",
+                "GAME_CONFIG_LOCATION": "%MAGES_CONFIG_LOCATION%/ANONYMOUS;CODE",
+                "DESKTOP_SHORTCUT_PATH": "%DESKTOP%/ANONYMOUS;CODE Improvement Patch (Steam).lnk",
+                "STARTMENU_SHORTCUT_PATH": "%STARTMENU%/ANONYMOUS;CODE Improvement Patch (Steam).lnk"
+            }
+        }
+    },
+    "playShortcut": {
+        "displayName": "ANONYMOUS;CODE Improvement Patch (Steam)",
+        "version": "1.0.1",
+        "targetPath": "%LAUNCHERENG_PATH%",
+        "workingDir": "%GAME_PATH%",
+        "tooltip": "Play ANONYMOUS;CODE Improvement Patch (Steam)",
+        "xdgCategories": "Game_Steam"
+    },
+    "origScriptArchivePath": "%GAME_PATH%/USRDIR/script.mpk",
+    "origScriptArchiveHash": "03f35afbe829872e9bea9a17064f149d"
+}

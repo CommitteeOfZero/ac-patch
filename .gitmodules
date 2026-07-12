@@ -1,0 +1,6 @@
+[submodule "launcher/realboot"]
+	path = launcher/realboot
+	url = https://github.com/CommitteeOfZero/realboot.git
+[submodule "installer/noidget"]
+	path = installer/noidget
+	url = https://github.com/CommitteeOfZero/noidget.git

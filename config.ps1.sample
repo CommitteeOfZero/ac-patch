@@ -1,0 +1,2 @@
+# Add things that need to be on your PATH for this build here, e.g. Visual C++ 2022 binary dir, Qt 5.15.x for MSVC 2019 binary dir, 7-Zip binary dir
+$env:path = "C:\Qt\5.15.2\msvc2019\bin;C:\Program Files\Microsoft Visual Studio\2022\Community\VC;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build;" + $env:path
