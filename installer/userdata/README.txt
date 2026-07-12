@@ -1,6 +1,6 @@
 ANONYMOUS;CODE Improvement Patch (Steam)
 Committee of Zero
-Version 1.0.1 - January 1, 2024
+Version 1.1.0 - Month X, 202X
 ==============================
 https://sonome.dareno.me
 https://twitter.com/CommitteeOf0

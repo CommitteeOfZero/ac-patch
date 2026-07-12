@@ -668,7 +668,7 @@ return {
 	ac_load_pol0098 = {
 		text = "Yeah. Wait for the right moment.",
 		left = 420,
-		top = 32
+		top = 790,
 	},
 	ac_load_pol0099 = {
 		text = "Feeling anxious, huh?",
