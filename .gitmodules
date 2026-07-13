@@ -4,3 +4,17 @@
 [submodule "installer/noidget"]
 	path = installer/noidget
 	url = https://github.com/CommitteeOfZero/noidget.git
+[submodule "kawtools"]
+	path = kawtools
+	url = https://github.com/CommitteeOfZero/kawtools
+[submodule "DoNut"]
+	path = DoNut
+	url = https://github.com/CommitteeOfZero/DoNut.git
+[submodule "ac-scripts-full"]
+	path = ac-scripts-full
+	url = https://github.com/CommitteeOfZero/ac-scripts.git
+	branch = coz-full
+[submodule "ac-scripts-partial"]
+	path = ac-scripts-partial
+	url = https://github.com/CommitteeOfZero/ac-scripts.git
+	branch = coz-partial
