@@ -68,6 +68,32 @@ function SetRealbootExeMetadata {
         --set-version-string "ProductVersion" "$version_string"
 }
 
+function RunInsert {
+    param ([string]$scriptsName, [string]$stagingName)
+
+    New-Item -ItemType directory -Path ".\temp\lines_$scriptsName" | Out-Null
+    New-Item -ItemType Junction -Path ".\temp\lines_$scriptsName\lang0" -Target "$pwd\$scriptsName" | Out-Null
+
+    python .\kawtools\insert.py ".\temp\lines_$scriptsName" ".\$stagingName\c0patch\scenario"
+}
+
+function RebuildC0patch {
+    param ([string]$stagingName, [string]$windataDir)
+
+    New-Item -ItemType directory -Path ".\temp\$stagingName" | Out-Null
+
+    cd $stagingName
+    "c0patch" | ..\DoNut\DoNut\bin\Release\net8.0\DoNut.exe
+    Move-Item -Force .\c0patch_info.json .\c0patch_info.psb.m.json
+    ..\FreeMote\PsBuild.exe info-psb c0patch_info.psb.m.json
+    Move-Item -Force .\c0patch_info.psb.m ..\temp\$stagingName
+    Move-Item -Force .\c0patch_body.bin ..\temp\$stagingName
+    cd ..
+
+    Copy-Item -Force ".\temp\$stagingName\c0patch_info.psb.m" $windataDir
+    Copy-Item -Force ".\temp\$stagingName\c0patch_body.bin" $windataDir
+}
+
 # END CONFIG
 
 function PrintSection {
@@ -95,6 +121,29 @@ Remove-Item -Force -Recurse -ErrorAction SilentlyContinue .\temp
 New-Item -ItemType directory -Path .\temp | Out-Null
 Remove-Item -Force -Recurse -ErrorAction SilentlyContinue .\symbols
 New-Item -ItemType directory -Path .\symbols | Out-Null
+
+PrintSection "Pulling latest script changes"
+cd ac-scripts-full
+& git pull
+cd ..
+cd ac-scripts-partial
+& git pull
+cd ..
+
+PrintSection "Building DoNut"
+dotnet build .\DoNut\DoNut\DoNut.csproj -c Release
+
+PrintSection "Inserting translated scenario text"
+Write-Output "Inserting full scenario text"
+RunInsert "ac-scripts-full" "c0patch_full"
+Write-Output "Inserting partial scenario text"
+RunInsert "ac-scripts-partial" "c0patch_partial"
+
+PrintSection "Reconstructing c0patch archives"
+Write-Output "Rebuilding full c0patch"
+RebuildC0patch "c0patch_full" "content\DIST_FULL\windata"
+Write-Output "Rebuilding partial c0patch"
+RebuildC0patch "c0patch_partial" "content\DIST_PARTIAL\windata"
 
 PrintSection "Copying content to DIST"
 Copy-Item -Recurse -Force .\content\* .\DIST

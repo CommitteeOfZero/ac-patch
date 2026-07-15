@@ -8,6 +8,14 @@ ac-edited-images/*
 !ac-edited-images/.gitkeep
 script_archive_steam/*
 !script_archive_steam/.gitkeep
+c0patch_full/*
+!c0patch_full/.gitkeep
+!c0patch_full/c0patch_info.psb.m.json
+!c0patch_full/c0patch_info.psb.m.resx.json
+c0patch_partial/*
+!c0patch_partial/.gitkeep
+!c0patch_partial/c0patch_info.psb.m.json
+!c0patch_partial/c0patch_info.psb.m.resx.json
 /*.zip
 /*.rar
 
