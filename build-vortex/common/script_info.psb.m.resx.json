@@ -1,0 +1,21 @@
+{
+  "PsbVersion": 3,
+  "PsbType": "ArchiveInfo",
+  "Platform": "none",
+  "CryptKey": null,
+  "ExternalTextures": false,
+  "Context": {
+    "MdfKeyLength": 131,
+    "FileName": "script_info.psb.m",
+    "MdfKey": "5fWhAHt4zVn2Xscript_info.psb.m",
+    "PsbZlibFastCompress": false,
+    "PsbShellType": "MDF",
+    "ArchiveSource": [
+      "script"
+    ],
+    "MdfMtKey": "5fWhAHt4zVn2X",
+    "ArchiveItemFileNames": [],
+    "BodyBinName": "script_body.bin"
+  },
+  "Resources": null
+}

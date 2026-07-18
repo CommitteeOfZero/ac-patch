@@ -1,0 +1,265 @@
+{
+  "expire_suffix_list": [
+    ".psb.m"
+  ],
+  "file_info": {
+    "action.nut.m": [
+      0,
+      0
+    ],
+    "application.nut.m": [
+      0,
+      0
+    ],
+    "autosaveload.nut.m": [
+      0,
+      0
+    ],
+    "backlog.nut.m": [
+      0,
+      0
+    ],
+    "baselayer.nut.m": [
+      0,
+      0
+    ],
+    "basepicture.nut.m": [
+      0,
+      0
+    ],
+    "basiclayer.nut.m": [
+      0,
+      0
+    ],
+    "basicpicture.nut.m": [
+      0,
+      0
+    ],
+    "basicrender.nut.m": [
+      0,
+      0
+    ],
+    "basictext.nut.m": [
+      0,
+      0
+    ],
+    "c0override.nut.m": [
+      0,
+      0
+    ],
+    "config.nut.m": [
+      0,
+      0
+    ],
+    "confirmdialog.nut.m": [
+      0,
+      0
+    ],
+    "debug.nut.m": [
+      0,
+      0
+    ],
+    "dmmauth.nut.m": [
+      0,
+      0
+    ],
+    "doublepicture.nut.m": [
+      0,
+      0
+    ],
+    "dummyinput.nut.m": [
+      0,
+      0
+    ],
+    "envenv.nut.m": [
+      0,
+      0
+    ],
+    "envplayer.nut.m": [
+      0,
+      0
+    ],
+    "envsystem.nut.m": [
+      0,
+      0
+    ],
+    "exception.nut.m": [
+      0,
+      0
+    ],
+    "extra.nut.m": [
+      0,
+      0
+    ],
+    "fontinfo.nut.m": [
+      0,
+      0
+    ],
+    "gestureinfo.nut.m": [
+      0,
+      0
+    ],
+    "help.nut.m": [
+      0,
+      0
+    ],
+    "include.nut.m": [
+      0,
+      0
+    ],
+    "init.nut.m": [
+      0,
+      0
+    ],
+    "library.nut.m": [
+      0,
+      0
+    ],
+    "library_modefn.nut.m": [
+      0,
+      0
+    ],
+    "lifegame.nut.m": [
+      0,
+      0
+    ],
+    "live2d.nut.m": [
+      0,
+      0
+    ],
+    "main.nut.m": [
+      0,
+      0
+    ],
+    "message.nut.m": [
+      0,
+      0
+    ],
+    "motionpanel.nut.m": [
+      0,
+      0
+    ],
+    "override.nut.m": [
+      0,
+      0
+    ],
+    "rsc_spec_ios.nut.m": [
+      0,
+      0
+    ],
+    "rsc_spec_nx.nut.m": [
+      0,
+      0
+    ],
+    "rsc_spec_ps4.nut.m": [
+      0,
+      0
+    ],
+    "rsc_spec_vita.nut.m": [
+      0,
+      0
+    ],
+    "rsc_spec_win.nut.m": [
+      0,
+      0
+    ],
+    "rsc_spec_xone.nut.m": [
+      0,
+      0
+    ],
+    "saveload.nut.m": [
+      0,
+      0
+    ],
+    "savesystem.nut.m": [
+      0,
+      0
+    ],
+    "selectdialog.nut.m": [
+      0,
+      0
+    ],
+    "sound.nut.m": [
+      0,
+      0
+    ],
+    "spec.nut.m": [
+      0,
+      0
+    ],
+    "spec_nx.nut.m": [
+      0,
+      0
+    ],
+    "spec_ps3.nut.m": [
+      0,
+      0
+    ],
+    "spec_ps4.nut.m": [
+      0,
+      0
+    ],
+    "spec_psp.nut.m": [
+      0,
+      0
+    ],
+    "spec_vita.nut.m": [
+      0,
+      0
+    ],
+    "spec_win.nut.m": [
+      0,
+      0
+    ],
+    "spec_x360.nut.m": [
+      0,
+      0
+    ],
+    "spec_xone.nut.m": [
+      0,
+      0
+    ],
+    "startup.nut.m": [
+      0,
+      0
+    ],
+    "system.nut.m": [
+      0,
+      0
+    ],
+    "system_menu.nut.m": [
+      0,
+      0
+    ],
+    "text.nut.m": [
+      0,
+      0
+    ],
+    "tips.nut.m": [
+      0,
+      0
+    ],
+    "title.nut.m": [
+      0,
+      0
+    ],
+    "title_menu.nut.m": [
+      0,
+      0
+    ],
+    "tus.nut.m": [
+      0,
+      0
+    ],
+    "util.nut.m": [
+      0,
+      0
+    ],
+    "world.nut.m": [
+      0,
+      0
+    ]
+  },
+  "info": "archive",
+  "version": 1.0
+}

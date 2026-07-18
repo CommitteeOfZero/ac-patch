@@ -1,0 +1,21 @@
+{
+  "PsbVersion": 3,
+  "PsbType": "ArchiveInfo",
+  "Platform": "none",
+  "CryptKey": null,
+  "ExternalTextures": false,
+  "Context": {
+    "MdfKeyLength": 131,
+    "FileName": "font_info.psb.m",
+    "MdfKey": "5fWhAHt4zVn2Xfont_info.psb.m",
+    "PsbZlibFastCompress": false,
+    "PsbShellType": "MDF",
+    "ArchiveSource": [
+      "font"
+    ],
+    "MdfMtKey": "5fWhAHt4zVn2X",
+    "ArchiveItemFileNames": [],
+    "BodyBinName": "font_body.bin"
+  },
+  "Resources": null
+}

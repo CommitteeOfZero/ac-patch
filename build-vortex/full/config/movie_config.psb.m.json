@@ -1,0 +1,120 @@
+{
+  "movies": [{
+      "name": "acb_3030x_loop.mzv",
+      "val": 32
+    },{
+      "name": "acb_3060n_loop.mzv",
+      "val": 32
+    },{
+      "name": "acb_001a.mzv",
+      "val": 28
+    },{
+      "name": "ac_prologue02.mzv",
+      "val": 40
+    },{
+      "name": "ac_prologue01.mzv",
+      "val": 40
+    },{
+      "name": "op.mzv",
+      "val": 40
+    },{
+      "name": "true_end.mzv",
+      "val": 40
+    },{
+      "name": "ac_uav_launch.mzv",
+      "val": 40
+    },{
+      "name": "acb_3070y_loop.mzv",
+      "val": 32
+    },{
+      "name": "ac_prologue01_en.mzv",
+      "val": 40
+    },{
+      "name": "acb_9230a_loop.mzv",
+      "val": 32
+    },{
+      "name": "acb_164c.mzv",
+      "val": 28
+    },{
+      "name": "acb_3070s_loop.mzv",
+      "val": 32
+    },{
+      "name": "acb_0100x_loop.mzv",
+      "val": 28
+    },{
+      "name": "ac_prologue02_en.mzv",
+      "val": 40
+    },{
+      "name": "ac_hacktrigger_short.mzv",
+      "val": 28
+    },{
+      "name": "acb_9320a_loop.mzv",
+      "val": 32
+    },{
+      "name": "acb_9230n_loop.mzv",
+      "val": 32
+    },{
+      "name": "acb_8010a_loop.mzv",
+      "val": 32
+    },{
+      "name": "ace_099a_snow.mzv",
+      "val": 28
+    },{
+      "name": "acb_208a.mzv",
+      "val": 28
+    },{
+      "name": "ac_metor.mzv",
+      "val": 28
+    },{
+      "name": "ac_hanabi.mzv",
+      "val": 28
+    },{
+      "name": "acb_9360n_loop.mzv",
+      "val": 32
+    },{
+      "name": "acb_164b.mzv",
+      "val": 28
+    },{
+      "name": "ac_hacktrigger_icon_change.mzv",
+      "val": 28
+    },{
+      "name": "op_silent.mzv",
+      "val": 32
+    },{
+      "name": "op_silent_en.mzv",
+      "val": 32
+    },{
+      "name": "acb_3060x_loop.mzv",
+      "val": 32
+    },{
+      "name": "acb_3070x_loop.mzv",
+      "val": 32
+    },{
+      "name": "op_en.mzv",
+      "val": 40
+    },{
+      "name": "ac_rocket.mzv",
+      "val": 28
+    },{
+      "name": "ac_hacktrigger.mzv",
+      "val": 28
+    },{
+      "name": "normal_end.mzv",
+      "val": 40
+    },{
+      "name": "acb_164a.mzv",
+      "val": 28
+    },{
+      "name": "acb_3070z_loop.mzv",
+      "val": 32
+    },{
+      "name": "ace_063a.mzv",
+      "val": 32
+    },{
+      "name": "normal_end_gop10fixed.mzv",
+      "val": 32
+    },{
+      "name": "normal_end_gop2fixed.mzv",
+      "val": 32
+    }]
+}

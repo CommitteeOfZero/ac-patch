@@ -1,0 +1,40 @@
+{
+  "archives": {
+    "c0patch": "",
+    "c0sound": "sound",
+    "font": "font",
+    "image": "image",
+    "map": "map",
+    "motion": "motion",
+    "scenario": "scenario",
+    "sound": "sound"
+  },
+  "constant": {
+    "DEBUG_FONTSIZE": 32,
+    "RESTRICTED_AGE": 15,
+    "SCHEIGHT": 1080,
+    "SCWIDTH": 1920,
+    "TARGET_SYSTEM": "WIN"
+  },
+  "fontList": ["FOT-RodinPro-B.otf","SourceHanSansJP-Regular.otf","SourceHanSansJP-RegularIt.otf","textfont48","textfont39","textfont36","textfont32","textfont24","textfont16","textfont12"],
+  "saveSystem": {
+    "BACKUP_COMMENT": "System Data",
+    "BACKUP_DETAIL": "ANONYMOUS;CODE Demo System Data",
+    "BACKUP_DIALOG": "System Data",
+    "BACKUP_GAMECOMMENT": "Save Data",
+    "BACKUP_GAMEDETAIL": "ANONYMOUS;CODE Demo Save Data",
+    "BACKUP_GAMEDIALOG": "Save Data",
+    "BACKUP_GAMEICON": "savedata/game_icon0.png",
+    "BACKUP_GAMESIZE": 1802240,
+    "BACKUP_NEWDATAICON": "savedata/game_icon0.png",
+    "ETCVOICE": "MALE",
+    "SAVEDATA_AUTO_DATA_COUNT": 50,
+    "SAVEDATA_AUTO_PAGE_COUNT": 0,
+    "SAVEDATA_CROSS_PAGE_COUNT": 0,
+    "SAVEDATA_PACKMODE": 0,
+    "SAVEDATA_PAGESIZE": 1,
+    "SAVEDATA_PAGE_COUNT": 0,
+    "THUMBNAIL_HEIGHT": 225,
+    "THUMBNAIL_WIDTH": 400
+  }
+}
