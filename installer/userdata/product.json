@@ -8,6 +8,7 @@
         "PATCH_CONTENT_COMMON": "DIST/DIST_COMMON",
         "PATCH_CONTENT_FULL": "DIST/DIST_FULL",
         "PATCH_CONTENT_PARTIAL": "DIST/DIST_PARTIAL",
+        "STEAM_ACHIEVEMENT_CONTENT": "achievements",
         "LAUNCHERENG_PATH": "%GAME_PATH%/MAGESgamelauncher.exe",
         "LAUNCHER_EXE": "MAGESgamelauncher.exe"
     },

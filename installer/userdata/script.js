@@ -174,6 +174,10 @@ function DoTx() {
     }
   }
 
+  // We're replacing Steam achievement data for them to be accurate
+  var steamAchievementSection = ng.tx.tx().addSection('Replacing Steam Achievements data');
+  steamAchievementSection.copyFiles('%STEAM_ACHIEVEMENT_CONTENT%/*', '%STEAM_PATH%/appcache/stats')
+
   // We're renaming the exe since we had to rename the launcher to be called by Steam since canaryMagesLauncher is dead.
   var applyPatchesSection = ng.tx.tx().addSection('Applying patches');
 
