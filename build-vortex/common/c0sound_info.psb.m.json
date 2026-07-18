@@ -1,0 +1,25 @@
+{
+  "expire_suffix_list": [
+    ".psb"
+  ],
+  "file_info": {
+    "gameover_short_en": [
+      0,
+      0
+    ],
+    "gameover_short_en_en": [
+      0,
+      0
+    ],
+    "gameover_short_en_jp": [
+      0,
+      0
+    ],
+    "gameover_short_jp": [
+      0,
+      0
+    ]
+  },
+  "info": "archive",
+  "version": 1.0
+}

@@ -1,0 +1,21 @@
+{
+  "PsbVersion": 3,
+  "PsbType": "ArchiveInfo",
+  "Platform": "none",
+  "CryptKey": null,
+  "ExternalTextures": false,
+  "Context": {
+    "MdfKeyLength": 131,
+    "FileName": "c0sound_info.psb.m",
+    "MdfKey": "5fWhAHt4zVn2Xc0sound_info.psb.m",
+    "PsbZlibFastCompress": false,
+    "PsbShellType": "MDF",
+    "ArchiveSource": [
+      "c0sound"
+    ],
+    "MdfMtKey": "5fWhAHt4zVn2X",
+    "ArchiveItemFileNames": [],
+    "BodyBinName": "c0sound_body.bin"
+  },
+  "Resources": null
+}

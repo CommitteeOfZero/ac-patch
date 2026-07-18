@@ -2,8 +2,9 @@ config.ps1
 temp/
 DIST/
 symbols/
-**/windata/*
-!**/windata/.gitkeep
+**/windata/**
+!**/windata/movie/
+!**/windata/movie/.gitkeep
 ac-edited-images/*
 !ac-edited-images/.gitkeep
 script_archive_steam/*
@@ -49,6 +50,11 @@ build-vortex/partial/config/*
 !build-vortex/partial/config/movie_config.psb.m.json
 !build-vortex/partial/config/movie_config.psb.m.resx.json
 build-vortex/common/*
+!build-vortex/common/c0sound_info.psb.m.json
+!build-vortex/common/c0sound_info.psb.m.resx.json
+!build-vortex/common/c0sound/
+build-vortex/common/c0sound/*
+!build-vortex/common/c0sound/.gitkeep
 !build-vortex/common/script_info.psb.m.json
 !build-vortex/common/script_info.psb.m.resx.json
 !build-vortex/common/script/

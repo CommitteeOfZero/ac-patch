@@ -161,6 +161,24 @@ function RebuildFont {
     cd $repoRoot
 }
 
+function RebuildC0sound {
+    $tempDir = "$repoRoot\temp\common\c0sound"
+    New-Item -ItemType directory -Path $tempDir | Out-Null
+
+    cd "$repoRoot\build-vortex\common"
+    # PsBuild's archive packer scans the ArchiveSource folder directly and
+    # packs every physical file as an entry, regardless of the manifest's
+    # file_info list -- .gitkeep would otherwise get packed as a spurious
+    # entry. Stash it out of the folder for the pack step, then restore it.
+    Move-Item -Force .\c0sound\.gitkeep $tempDir
+    python "$repoRoot\kawtools\gen_archive_info.py" c0sound c0sound_info.psb.m.json "*" ".psb"
+    & "$repoRoot\FreeMote\PsBuild.exe" info-psb c0sound_info.psb.m.json
+    Move-Item -Force $tempDir\.gitkeep .\c0sound\.gitkeep
+    Move-Item -Force .\c0sound_info.psb.m $tempDir
+    Move-Item -Force .\c0sound_body.bin $tempDir
+    cd $repoRoot
+}
+
 # END CONFIG
 
 function PrintSection {
@@ -205,10 +223,12 @@ Write-Output "Inserting full scenario text"
 RunInsert "ac-scripts-full" "full"
 Write-Output "Inserting partial scenario text"
 RunInsert "ac-scripts-partial" "partial"
+PrintSection "Inserting translated tips text"
 Write-Output "Inserting full tips text"
 RebuildTips "ac-scripts-full" "full"
 Write-Output "Inserting partial tips text"
 RebuildTips "ac-scripts-partial" "partial"
+PrintSection "Inserting translated trigger_params text"
 Write-Output "Inserting full trigger_params text"
 RebuildTriggerParams "ac-scripts-full" "full"
 Write-Output "Inserting partial trigger_params text"
@@ -219,14 +239,18 @@ Write-Output "Rebuilding full c0patch"
 RebuildC0patch "full"
 Write-Output "Rebuilding partial c0patch"
 RebuildC0patch "partial"
+PrintSection "Reconstructing config archives"
 Write-Output "Rebuilding full config"
 RebuildConfig "full"
 Write-Output "Rebuilding partial config"
 RebuildConfig "partial"
+PrintSection "Reconstructing script, font, and c0sound archives"
 Write-Output "Rebuilding script"
 RebuildScript
 Write-Output "Rebuilding font"
 RebuildFont
+Write-Output "Rebuilding c0sound"
+RebuildC0sound
 
 PrintSection "Copying content to DIST"
 Copy-Item -Recurse -Force .\content\* .\DIST
@@ -241,6 +265,7 @@ Copy-Item -Force .\temp\full\config\config_info.psb.m, .\temp\full\config\config
 Copy-Item -Force .\temp\partial\config\config_info.psb.m, .\temp\partial\config\config_body.bin .\DIST\DIST_PARTIAL\windata
 Copy-Item -Force .\temp\common\script\script_info.psb.m, .\temp\common\script\script_body.bin .\DIST\DIST_COMMON\windata
 Copy-Item -Force .\temp\common\font\font_info.psb.m, .\temp\common\font\font_body.bin .\DIST\DIST_COMMON\windata
+Copy-Item -Force .\temp\common\c0sound\c0sound_info.psb.m, .\temp\common\c0sound\c0sound_body.bin .\DIST\DIST_COMMON\windata
 
 PrintSection "Building and copying realboot"
 cd launcher
